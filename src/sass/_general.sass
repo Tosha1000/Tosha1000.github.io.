@@ -1,0 +1,464 @@
+
+header
+  position: relative
+  height: 50px
+
+  
+
+nav
+  position: fixed
+  width: 100vw
+  height: 50px
+  background-color: #212121
+  z-index: 5
+
+.hamburger
+  display: none    
+
+.menu
+  display: flex
+  justify-content: space-between
+  padding: 13px 70px
+  margin: 0
+  list-style-type: none
+
+  .menu_link
+    color: #ffffff
+    font-size: 15px
+    font-weight: 300
+
+  .menu_item
+    border-right: 2px dotted black
+    padding-right: 28px
+    &:last-child
+        border-right: none
+
+.subheader
+  position: absolute
+  top: 50px
+  width: 100%
+  height: 84px
+  background-color: rgba(0, 0, 0, 0.6)
+
+  .subheader_logo
+    display: block
+    max-width: 100%
+    margin-top: 16px
+
+  .subheader_official
+    margin-top: 6px
+    opacity: 0.5
+    color: #ffffff
+    font-size: 13px
+    font-weight: 400
+
+  .subheader_call
+    color: #ffffff
+    font-size: 12px
+    font-weight: 300
+    margin-top: 19px
+    text-align: right
+
+  .subheader_phone
+    display: block
+    margin-top: 8px
+    color: #ffffff
+    font-size: 22px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: right
+    line-height: 12px
+ 
+
+  .subheader_btn
+    margin-top: 19px
+    width: 172px
+    height: 46px
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    color: #ffffff
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    +btn_hover 
+
+.promo
+  min-height: 800px
+  background: url('../img/Uber_car.png') center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+
+  .promo_header
+    color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 60px
+    line-height: 60px
+    margin: 0
+    text-align: center
+
+  .promo_subheader
+    color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 36px
+    line-height: 36px
+    margin: 0
+    margin-top: 22px
+    text-align: center
+
+  .promo_descr
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
+    margin-top: 23px
+
+  .promo_btn
+    display: block
+    margin: 118px auto 0 auto
+    width: 259px
+    height: 63px
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    text-transform: uppercase
+    +btn_hover
+
+.reasons
+  padding: 71px 0 65px 0
+
+.label
+  margin: 0 auto
+  height: 24px
+  width: 112px
+  padding: 5px 12px
+  background-color: #000000
+  color: #ffffff
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
+  text-align: center
+
+.title
+  margin-bottom: 0
+  margin-top: 38px
+  color: #222222
+  font-size: 38px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+
+.subtitle
+
+    font-size: 17px
+    font-weight: 400
+    color: #222222
+    text-align: center
+
+.reasons .reasons_block
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 35px
+
+  .reasons_round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: #1eacc7
+    border-radius: 100%
+
+  .reasons_descr
+    width: 343px
+
+    .reasons_subtitle
+      line-height: 21px
+      color: #1eacc7
+      font-size: 17px
+      font-weight: 400
+
+    .reasons_text
+      color: #202020
+      font-size: 15px
+      font-weight: 300
+      line-height: 21px
+
+.mobile
+    min-height: 864px
+    padding: 48px 0 79px 0
+    background: url('../img/BackgroundMobileUber.png') center (center / cover) no-repeat
+    .row
+        margin-top: 32px
+    &_item
+        position: relative
+        width: 320px
+        height: 280px
+        margin: 0 auto
+        margin-bottom: 19px
+        padding-top: 92px
+        &_1
+            background: url('../img/Uber-Mobile1.png') center (center / cover) no-repeat
+        &_2
+            background: url('../img/Uber-Mobile2.png') center (center / cover) no-repeat
+        &_3
+            background: url('../img/Uber-Mobile3.png') center (center / cover) no-repeat
+        &_4
+            background: url('../img/Uber-Mobile4.png') center (center / cover) no-repeat
+        &_5
+            background: url('../img/Uber-Mobile5.png') center (center / cover) no-repeat
+        &_6
+            background: url('../img/Uber-Mobile6.png') center (center / cover) no-repeat    
+        &_subtitle
+            font-size: 24px
+            font-weight: 400
+            text-transform: uppercase
+            color: #ffffff
+            text-align: center
+        &_plus
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            bottom: 35px
+            left: 50%
+            transform: translateX(-50%)
+            width: 26px
+            height: 26px
+            background-color: #000000   
+            margin: 0 auto
+            border-radius: 100%
+            cursor: pointer
+            &:before
+              content: ''
+              display: block
+              width: 14px
+              height: 2px
+              background-color: $main-color
+              transition: 0.3s all
+            &::after
+              content: ''
+              position: absolute
+              left: 50%
+              transform: translateX(-50%)
+              display: block
+              height: 14px
+              width: 2px
+              background-color: $main-color
+              transition: 0.3s all
+            &:hover
+              &:before, &::after
+                background-color: $second_color
+
+                
+             
+.choice
+  position: relative
+  min-height: 896px
+  &_car
+    display: block
+    position: absolute
+    margin: 232px auto 184px
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 2
+  .choice_1
+    min-height: 499px
+    background-color: black
+    padding-top: 57px
+    z-index: 1
+    .label
+      margin: 0 auto
+      height: 24px
+      width: 112px
+      padding: 5px 12px
+      background-color: #ffffff
+      color: black
+      font-size: 11px
+      font-weight: 300
+      text-transform: uppercase
+      text-align: center
+    .title
+      margin-top: 25px
+      font-size: 38px
+      font-weight: 700
+      text-transform: uppercase
+      color: #ffffff
+    .subtitle
+      font-size: 17px
+      font-weight: 400
+      color: #ffffff  
+  &_2
+    min-height: 397px
+    background: url('../img/BackgroundMobileUber.png') center (center / cover) no-repeat
+    z-index: 1
+    .subtitle
+      padding-top: 217px
+      font-size: 17px
+      font-weight: 400
+      color: #222222
+
+.require
+  padding: 68px 0 84px 0 
+  &_block
+    margin: 33px 0     
+    &_nmb
+      margin-bottom: 0px
+  &_title
+    font-size: 22px
+    font-weight: 400
+    color: #1ca8c3
+  &_list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 12px
+
+
+    li
+      position: relative
+      font-size: 17px
+      font-weight: 300
+      color: #222222
+      margin-bottom: 10px
+      &:before
+        content: ''
+        display: inline-block
+        position: absolute
+        left: -32px
+        top: 3px
+        width: 21px
+        height: 20px
+        background: url('../icons/check mark blue.png') center (center / cover) no-repeat
+  .warning
+    .require_title
+      color: $second_color
+    .require_list
+      li
+        &:before
+          background: url('../icons/check mark red.png') center (center / cover) no-repeat
+.require_dscr
+  color: $main-color  
+  font-weight: 400  
+
+.city
+  min-height: 717px
+  background: url('../img/AroundWorld.png') center (center / cover) no-repeat 
+  text-align: center
+  padding: 49px 0 49px 0 
+  .label
+    width: 76px
+    height: 24px
+    background-color: #ffffff
+    font-size: 11px
+    font-weight: 100
+    text-transform: uppercase
+    color: #070716 
+  .title
+    margin-top: 32px
+    font-size: 38px
+    font-weight: 700
+    text-transform: uppercase
+    color: #ffffff 
+  .subtitle
+    font-size: 17px
+    font-weight: 400
+    color: #ffffff
+  .foottitle
+    display: inline-block
+    vertical-align: center
+    margin-top: 486px   
+    font-size: 15px
+    font-weight: 400
+    text-transform: uppercase
+    color: #1fbad6
+
+footer
+  min-height: 156px
+  position: relative
+  .line
+      display: inline-block
+      position: relative
+      margin-top: 14px
+      margin-bottom: 20px
+      margin-left: 180px
+      width: 299px
+      height: 4px
+      background-color: #1fbad6
+  .browser
+    display: inline
+    position: absolute
+    margin-top: 51px
+    margin-left: 21px
+    &_icon
+      display: inline-block
+      margin: 0 2px 0 2px
+      text-align: center
+      padding-top: 3px
+      width: 32px
+      height: 32px
+      background-color: #000000
+      border-radius: 100%
+      i
+        color: white
+
+  .trifle
+    padding-left: 50px
+    display: flex
+    flex-direction: column
+    &_top
+      display: inline
+      text-align: center 
+      a
+        font-size: 15px
+        font-weight: 400
+        text-transform: uppercase
+        color: #070716 
+        margin: 0 46px 0 0
+    &_medium
+      display: inline
+      text-align: center 
+      padding-right: 10px
+      a
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+        color: #999999
+        margin: 0 21px 0 0
+    &_bottom
+      display: inline
+      text-align: center 
+      margin-top: 15px
+      a
+        font-size: 11px
+        font-weight: 400
+        text-transform: uppercase
+        color: #1fbad6
+  .market
+    display: inline-block
+    margin: 51px 0 0 350px  
+.black_line
+    width: 100%
+    height: 8px
+    background-color: #070716
+.col-6 .xs-visible
+  display: none     
+
+     
+
+          
+
+            
+
+
+           
